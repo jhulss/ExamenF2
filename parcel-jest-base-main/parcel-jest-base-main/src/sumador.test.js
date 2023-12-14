@@ -28,7 +28,12 @@ describe("Verificar", () => {
     expect(respuesta.verificarEquilibrio('[][]][')).toEqual(false);
   });
 
+  it("deberia devolver true ya que la cadena esta equilibrada", () => {
+    const respuesta = new corchetesEquilibrados();
+    expect(respuesta.verificarEquilibrio('[[[43]abc]er]')).toEqual(true);
+  });
 
+  
 });
 
 
