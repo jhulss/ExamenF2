@@ -1,5 +1,12 @@
-function sumar(a, b) {
-  return a + b;
+class corchetesEquilibrados{
+  
+  verificarEquilibrio(cadena) {
+    if (cadena === '') {
+      return true;
+    }
+  }
+
+
 }
 
-export default sumar;
+export default corchetesEquilibrados;

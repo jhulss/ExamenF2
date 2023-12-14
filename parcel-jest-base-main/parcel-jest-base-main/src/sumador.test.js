@@ -1,7 +1,11 @@
-import sumar from "./sumador.js";
+import corchetesEquilibrados from "./sumador.js";
 
-describe("Sumar", () => {
-  it("deberia sumar dos numeros", () => {
-    expect(sumar(3, 2)).toEqual(5);
+
+describe("Verificar", () => {
+  it("deberia devolver cadena vacia, dando a enteder que esta equilibrada", () => {
+    const respuesta = new corchetesEquilibrados();
+    expect(respuesta.verificarEquilibrio('')).toEqual(true);
   });
 });
+
+
