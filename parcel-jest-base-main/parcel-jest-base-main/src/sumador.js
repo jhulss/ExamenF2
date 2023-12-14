@@ -5,12 +5,22 @@ class corchetesEquilibrados{
       return true;
     }
 
-    if (cadena.length === 2 && cadena[0] === '[' && cadena[1] === ']') {
-      return true;
+    let contador = 0;
+
+    for (let i = 0; i < cadena.length; i++) {
+      const caracter = cadena[i];
+
+      if (caracter === '[') {
+      contador++;
+      } else if (caracter === ']') {
+        if (contador === 0) {
+        return false;
+      }
+      contador--;
     }
-    else{
-      return false
-    }
+  }
+
+    return contador === 0;
   }
   
 
